@@ -1,0 +1,43 @@
+{
+  "name": "nodo-videos",
+  "version": "1.0.0",
+  "description": "Sistema open-source para producir videos informativos verticales (persona a cámara + animaciones de datos con HyperFrames + tipografía kinética + SFX) con Remotion.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "init": "node scripts/init.mjs",
+    "dev": "remotion studio",
+    "lint": "eslint src && tsc",
+    "check-env": "node scripts/check-env.mjs",
+    "setup-whisper": "node scripts/setup-whisper.mjs",
+    "clean-video": "node scripts/clean-video.mjs",
+    "clean-audio": "node scripts/clean-audio.mjs",
+    "transcribe": "node scripts/transcribe.mjs",
+    "render-hyperframes": "node scripts/render-hyperframes.mjs",
+    "render": "node scripts/render.mjs",
+    "link-memory": "node scripts/link-memory.mjs"
+  },
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/layout-utils": "4.0.539",
+    "@remotion/media-utils": "4.0.539",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.539",
+    "@remotion/install-whisper-cpp": "4.0.539",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "hyperframes": "^0.9.53",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,1 @@
+Lee y ejecuta las instrucciones de `.agents/skills/setup/SKILL.md` para guiar al usuario en la configuración inicial interactiva de su marca (`brand.config.json`), tipografías, colores y verificación del entorno (`npm run init`).
